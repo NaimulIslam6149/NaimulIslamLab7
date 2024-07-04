@@ -23,6 +23,9 @@ public class SettingsFragment extends Fragment {
         textClock.setFormat12Hour(null);
         textClock.setFormat24Hour("dd-MM-yyyy \n HH:mm:ss");
 
+        textViewProvince.setText("province");
+        textViewIndex.setText("INDEX");
+
 
         getParentFragmentManager().setFragmentResultListener("provinceSelection", getViewLifecycleOwner(), new FragmentResultListener() {
             @Override

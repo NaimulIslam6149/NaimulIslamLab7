@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 
 
 import android.provider.Settings;
+import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 
@@ -34,12 +35,17 @@ public class IslamActivity7 extends AppCompatActivity implements BottomNavigatio
         bottomNavigationView.setSelectedItemId(R.id.person);
 
         toolbar = findViewById(R.id.NaiToolbar);
+        setSupportActionBar(toolbar);
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.top_nav_menu, menu);
+        return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.menu_settings) {
-            //displayTextView.setText("You selected start!");
             Intent intent = new Intent(Settings.ACTION_SETTINGS);
             startActivity(intent);
             return true;
