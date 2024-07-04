@@ -28,6 +28,8 @@ public class IslamActivity7 extends AppCompatActivity implements BottomNavigatio
     FirstFragment firstFragment = new FirstFragment();
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
+    NaimulFragment naimulFragment = new NaimulFragment();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,10 @@ public class IslamActivity7 extends AppCompatActivity implements BottomNavigatio
 
         if (itemId == R.id.settings) {
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, thirdFragment).commit();
+            return true;
+        }
+        if (itemId == R.id.naimul) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, naimulFragment).commit();
             return true;
         }
 
