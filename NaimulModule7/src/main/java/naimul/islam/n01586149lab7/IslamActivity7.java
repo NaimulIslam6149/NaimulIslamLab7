@@ -3,31 +3,23 @@ package naimul.islam.n01586149lab7;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 
-import android.os.Bundle;
 import android.provider.Settings;
-import android.view.Menu;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import java.io.*;
 
 public class IslamActivity7 extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
     Toolbar toolbar;
-    FirstFragment firstFragment = new FirstFragment();
-    SecondFragment secondFragment = new SecondFragment();
-    ThirdFragment thirdFragment = new ThirdFragment();
+    PersonFragment firstFragment = new PersonFragment();
+    HomeFragment secondFragment = new HomeFragment();
+    SettingsFragment thirdFragment = new SettingsFragment();
     NaimulFragment naimulFragment = new NaimulFragment();
 
 

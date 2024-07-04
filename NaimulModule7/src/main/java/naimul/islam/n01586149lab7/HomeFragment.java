@@ -11,11 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-
-import androidx.fragment.app.Fragment;
-import java.io.*;
-
-public class SecondFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
         // TODO: Rename parameter arguments, choose names that match
         // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +24,7 @@ public class SecondFragment extends Fragment {
 
         private int counter = 0;
 
-        public SecondFragment() {
+        public HomeFragment() {
             // Required empty public constructor
         }
 
@@ -41,8 +37,8 @@ public class SecondFragment extends Fragment {
          * @return A new instance of fragment SecondFragment.
          */
         // TODO: Rename and change types and number of parameters
-        public static SecondFragment newInstance(String param1, String param2) {
-            SecondFragment fragment = new SecondFragment();
+        public static HomeFragment newInstance(String param1, String param2) {
+            HomeFragment fragment = new HomeFragment();
             Bundle args = new Bundle();
             args.putString(ARG_PARAM1, param1);
             args.putString(ARG_PARAM2, param2);

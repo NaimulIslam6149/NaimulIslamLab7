@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 
-public class FirstFragment extends Fragment {
+public class PersonFragment extends Fragment {
     ListView listView;
     String[] provinces;
 
